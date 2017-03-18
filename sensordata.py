@@ -12,7 +12,7 @@ from datetime import datetime
 start_time = time.time()
 interval = 10 # set interval in seconds
 deviceId = 'SOMEUNIQUE-DEVICE-ID' # for example: a uuid like this f7645058-fe8c-11e6-bc64-92361f002671
-url = 'https://SOME.URL/TO/POST/TO/api/v1/createlog/' # for example: https://YOUR-OWNCLOUD-INSTANCE/index.php/apps/sensorlogger/api/v1/createlog/ if you are using SensorLogger for owncloud
+url = 'https://SOME.URL/TO/POST/TO' # for example: https://YOUR-OWNCLOUD-INSTANCE/index.php/apps/sensorlogger/api/v1/createlog/ if you are using SensorLogger for owncloud
 headers = {'content-type': 'application/json'}
 
 sensor_args = { '11': Adafruit_DHT.DHT11,
