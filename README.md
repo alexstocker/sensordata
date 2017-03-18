@@ -7,6 +7,6 @@ Used to send data to
 
 build for
 
-[Raspberry Pi climate data logger using adafruit and a DTH22](https://www.html5live.at/2017/03/raspberry-pi-climate-data-logger-using-adafruit-and-a-dth22/)
+[Raspberry Pi climate data logger using adafruit and a DHT22](https://www.html5live.at/2017/03/raspberry-pi-climate-data-logger-using-adafruit-and-a-dht22/)
 
 
