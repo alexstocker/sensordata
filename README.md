@@ -1,7 +1,7 @@
 # sensordata
-simple python script to read sensor data using adafruit
+Python and C++ (Arduino/NodeMCU 1.0) examples
 
-Used to send data to
+used to send data to
 
 [SensorLogger for ownCloud](https://github.com/alexstocker/sensorlogger)
 
