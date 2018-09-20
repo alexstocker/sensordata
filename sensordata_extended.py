@@ -58,7 +58,7 @@ def sensorData():
                 'value' : fakeData3}
                 {'dataTypeId':3,
                 'value' : fakeData4}]
-  }
+                }
 
 
         req = urllib2.Request(url)
