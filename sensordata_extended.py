@@ -35,7 +35,7 @@ def sensorData():
     if humidity is not None and temperature is not None:
 #Example of payload for extended data see : https://github.com/alexstocker/sensorlogger/blob/master/tests/curl/post_extend_0.php
     payload = {
-   'deviceId': 'DEVICEID',
+   'deviceId': deviceId,
    'date': currentDate,
    'data': [{'dataTypeId':'1',
             'value' : temperature},
