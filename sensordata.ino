@@ -122,7 +122,7 @@ void setup(void){
 void loop(void){
   server.handleClient();
   if(WiFi.status() == WL_CONNECTED) {
-      DynamicJsonBuffer jsonBuffer;
+      DynamicJsonDocument root(1024);
 
     getDateFromNtp();
 
@@ -138,14 +138,13 @@ void loop(void){
     http.setAuthorization(username,token);
     http.addHeader("Content-Type", "application/json");
 
-    JsonObject& root = jsonBuffer.createObject();
     root["deviceId"] = "0100110-001100110-1101";
     root["temperature"] = rTemp;
     root["humidity"] = rHum;
     root["date"] = "20"+dateTime;
 
     String jsonStr;
-    root.printTo(jsonStr);
+    serializeJson(root, jsonStr);
     int httpCode = http.POST(jsonStr);
 
     http.end();
